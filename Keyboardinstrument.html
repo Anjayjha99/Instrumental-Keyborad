@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumental</title>
+    <style>
+        body {
+            background: url(back.jpg);
+            background-size: cover;
+        }
+
+        div {
+            display: inline;
+            position: absolute;
+            top: 200px;
+        }
+
+        .lett {
+            color: azure;
+            border: 2px solid aliceblue;
+            padding: 20px 0px;
+            text-align: center;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a" class="lett" style="position: absolute;
+   top: 200px;margin: 50px 80px;">A</div>
+
+    <div id="s" class="lett" style="position: absolute;
+   top: 200px; left: 100px; margin: 50px 120px;">S</div>
+
+    <div id="d" class="lett" style="position: absolute;
+   top: 200px; left: 200px;margin: 50px 160px;">D</div>
+
+    <div id="f" class="lett" style="position: absolute;
+   top: 200px; left: 300px;margin: 50px 200px;">F</div>
+
+    <div id="g" class="lett" style="position: absolute;
+   top: 200px; left: 400px;margin: 50px 240px;">G</div>
+
+    <div id="h" class="lett" style="position: absolute;
+   top: 200px; left: 500px;margin: 50px 280px;">H</div>
+
+    <div id="j" class="lett" style="position: absolute;
+   top: 200px; left: 600px;margin: 50px 320px;">J</div>
+
+    <div id="k" class="lett" style="position: absolute;
+   top: 200px; left: 700px;margin: 50px 360px;">K</div>
+
+    <div id="l" class="lett" style="position: absolute;
+   top: 200px; left: 800px;margin: 50px 400px;">L</div>
+
+    <audio id="aaudio" src="clap.wav"></audio>
+    <audio id="saudio" src="hihat.wav"></audio>
+    <audio id="daudio" src="kick.wav"></audio>
+    <audio id="faudio" src="openhat.wav"></audio>
+    <audio id="gaudio" src="boom.wav"></audio>
+    <audio id="haudio" src="ride.wav"></audio>
+    <audio id="jaudio" src="snare.wav"></audio>
+    <audio id="kaudio" src="tom.wav"></audio>
+    <audio id="laudio" src="tink.wav"></audio>
+</body>
+<script>
+    document.addEventListener('keydown', function kd(e) {
+        let k = e.keyCode;
+        switch (k) {
+            case 65: document.getElementById("aaudio").play();
+                document.querySelector('#a').style.border = '3px solid yellow';
+                document.querySelector('#a').style.transform = 'scale(1.5)';
+                break;
+            case 83: document.getElementById("saudio").play();
+                document.querySelector('#s').style.border = '3px solid yellow';
+                document.querySelector('#s').style.transform = 'scale(1.5)';
+                break;
+            case 68: document.getElementById("daudio").play();
+                document.querySelector('#d').style.border = '3px solid yellow';
+                document.querySelector('#d').style.transform = 'scale(1.5)';
+                break;
+            case 70: document.getElementById("faudio").play();
+                document.querySelector('#f').style.border = '3px solid yellow';
+                document.querySelector('#f').style.transform = 'scale(1.5)';
+                break;
+            case 71: document.getElementById("gaudio").play();
+                document.querySelector('#g').style.border = '3px solid yellow';
+                document.querySelector('#g').style.transform = 'scale(1.5)';
+                break;
+            case 72: document.getElementById("haudio").play();
+                document.querySelector('#h').style.border = '3px solid yellow';
+                document.querySelector('#h').style.transform = 'scale(1.5)';
+                break;
+            case 74: document.getElementById("jaudio").play();
+                document.querySelector('#j').style.border = '3px solid yellow';
+                document.querySelector('#j').style.transform = 'scale(1.5)';
+                break;
+            case 75: document.getElementById("kaudio").play();
+                document.querySelector('#k').style.border = '3px solid yellow';
+                document.querySelector('#k').style.transform = 'scale(1.5)';
+                break;
+            case 76: document.getElementById("laudio").play();
+                document.querySelector('#l').style.border = '3px solid yellow';
+                document.querySelector('#l').style.transform = 'scale(1.5)';
+                break;
+
+        }
+    })
+    document.addEventListener('keyup', function f(er) {
+        let ku = er.keyCode;
+        switch (ku) {
+            case 65: document.getElementById("aaudio").play();
+                document.querySelector('#a').style.border = '2px solid aliceblue'
+                document.querySelector('#a').style.transform = 'scale(1)';
+                break;
+            case 83: document.getElementById("saudio").play();
+                document.querySelector('#s').style.border = '2px solid aliceblue'
+                document.querySelector('#s').style.transform = 'scale(1)';
+                break;
+            case 68: document.getElementById("daudio").play();
+                document.querySelector('#d').style.border = '2px solid aliceblue'
+                document.querySelector('#d').style.transform = 'scale(1)';
+                break;
+            case 70: document.getElementById("faudio").play();
+                document.querySelector('#f').style.border = '2px solid aliceblue'
+                document.querySelector('#f').style.transform = 'scale(1)';
+                break;
+            case 71: document.getElementById("gaudio").play();
+                document.querySelector('#g').style.border = '2px solid aliceblue'
+                document.querySelector('#g').style.transform = 'scale(1)';
+                break;
+            case 72: document.getElementById("haudio").play();
+                document.querySelector('#h').style.border = '2px solid aliceblue'
+                document.querySelector('#h').style.transform = 'scale(1)';
+                break;
+            case 74: document.getElementById("jaudio").play();
+                document.querySelector('#j').style.border = '2px solid aliceblue'
+                document.querySelector('#j').style.transform = 'scale(1)';
+                break;
+            case 75: document.getElementById("kaudio").play();
+                document.querySelector('#k').style.border = '2px solid aliceblue'
+                document.querySelector('#k').style.transform = 'scale(1)';
+                break;
+            case 76: document.getElementById("laudio").play();
+                document.querySelector('#l').style.border = '2px solid aliceblue'
+                document.querySelector('#l').style.transform = 'scale(1)';
+                break;
+        }
+    })
+</script>
+
+</html>
